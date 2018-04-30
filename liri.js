@@ -87,8 +87,9 @@ function spotifyThis() {
             // console.log('statusCode:', response && response.statusCode);
             var info = JSON.parse(body);
             // console.log(info);
-            var IMDB_rating;
-            var RT_rating;
+            var IMDB_rating;//IMDB variable
+            var RT_rating;//RT_rating variable that are stored here
+            //imdb and rt stored in variables here
             //searches through Ratings array to locate IMDB and RT ratings; store in variables
             for (var i=0; i<info.Ratings.length; i++) {
               if (info.Ratings[i].Source === "Internet Movie Database") {
